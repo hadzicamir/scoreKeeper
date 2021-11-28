@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Keeper</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"> -->
+</head>
+<body>
+    <main>
+    <div class="container"> 
+        <img src="badminton.jpg" alt="badminton ball">
+        <h4>Score Keeper</h4>
+        <div class="text">
+        <h1 class="result"><span id="resOne">0</span> to <span id="resTwo">0</span></h1>
+        <p>Use the buttons below to keep score</p>
+        <p>Playing to <select name="select" id="select">
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        </p>
+    </div>
+        <div class="buttons">
+        <button id="first">+1 Player One</button>
+        <button id="second">+1 Player Two</button>
+        <button id="reset">Reset</button>
+    </div>
+    </div>
+</main>
+
+    <script src="app.js"></script>
+</body>
+</html>
