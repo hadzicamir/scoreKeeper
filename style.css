@@ -12,8 +12,9 @@ main {
 .container {
     width: 400px;
     height: auto;
-    border: 1px solid black;
+    border: 1px solid lightgray;
     margin: 0 auto; 
+    box-shadow: lightgray;
 }
 
 img {
@@ -57,13 +58,30 @@ h4 {
 }
 
 #first {
-    background-color: rgb(42, 202, 194);
+    background-color: rgb(7, 151, 132);
 }
 
 #second {
-    background-color: rgb(42, 169, 192);
+    background-color: rgb(13, 129, 206);
 }
 
 #reset {
     background-color: rgb(233, 53, 53);
+}
+
+.win {
+    color: green;
+}
+
+.lose {
+    color: red;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:disabled {
+    opacity: 0.5;
+    pointer-events: none;
 }

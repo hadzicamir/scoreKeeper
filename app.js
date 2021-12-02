@@ -5,7 +5,8 @@ let reset = document.querySelector('#reset');
 let select = document.querySelector('#select');
 let resOne = document.querySelector('#resOne');
 let resTwo = document.querySelector('#resTwo');
-let winScore;
+first.disabled = false;
+second.disabled = false;
 // FUNCTIONS
 
 // EVENT LISTENERS
@@ -14,12 +15,11 @@ first.addEventListener('click', () => {
     if(resOne.innerHTML === select.value){
         first.disabled = true;
         second.disabled = true;
+        resOne.classList.add('win');
+        resTwo.classList.add('lose');
+        first.disabled = true;
+        second.disabled = true;
     };
-    // if(resOne.innerHTML < select.value && resTwo.innerHTML < select.value){
-    //     if(resOne.innerHTML = resTwo.innerHTML){
-
-    //     }
-    // }
 });
 
 second.addEventListener('click', () => {
@@ -27,6 +27,10 @@ second.addEventListener('click', () => {
     if(resTwo.innerHTML === select.value){
         second.disabled = true;
         first.disabled = true;
+        resTwo.classList.add('win');
+        resOne.classList.add('lose');
+        first.disabled = true;
+        second.disabled = true;
     }
 });
 
@@ -35,6 +39,10 @@ reset.addEventListener('click', () => {
     second.disabled = false;
     resOne.innerHTML = 0;
     resTwo.innerHTML = 0;
+    resTwo.classList.remove('win', 'lose');
+    resOne.classList.remove('lose', 'win');
+    first.disabled = false;
+    second.disabled = false;
 });
 
 select.addEventListener('change', (event) => {
