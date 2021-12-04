@@ -1,19 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Score Keeper</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"> -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Score Keeper</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
 </head>
+
 <body>
-    <main>
-    <div class="container"> 
-        <img src="badminton.jpg" alt="badminton ball">
-        <h4>Score Keeper</h4>
-        <div class="text">
+  <section class="section">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-half is-offset-one-quarter">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image ">
+                <img src="badminton.jpg" alt="badminton">
+              </figure>
+            </div>
+            <header class="card-header">
+              <p class="card-header-title">
+                Score Keeper
+              </p>
+            </header>
+            <div class="card-content">
+              <div class="content">
+                <h1 class=" title is-1 result"><span id="resOne">0</span> to <span id="resTwo">0</span></h1>
+                <p class="subtitle">Use the buttons below to keep score</p>
+                <label for="select" class="label is-large is-inline">Playing to </label>
+                <div class="select is-rounded">
+                  <select name="select" id="select">
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <footer class="card-footer ">
+              <button class="is-primary button card-footer-item is-large" id="first" >+1 Player
+                One</button>
+              <button class="is-info button card-footer-item is-large" id="second" >+1 Player
+                Two</button>
+              <button class="is-danger button card-footer-item is-large" id="reset">Reset</button>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- <main>
+    <div class="container">
+        <img class="card-image image is-2by1" src="badminton.jpg" alt="badminton ball">
+        <h4 class="card-header">Score Keeper</h4>
+        <div class="card-content">
         <h1 class="result"><span id="resOne">0</span> to <span id="resTwo">0</span></h1>
         <p>Use the buttons below to keep score</p>
         <p>Playing to <select name="select" id="select">
@@ -29,8 +74,9 @@
         <button id="reset">Reset</button>
     </div>
     </div>
-</main>
+</main> -->
 
-    <script src="app.js"></script>
+  <script src="app.js"></script>
 </body>
+
 </html>
